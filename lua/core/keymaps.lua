@@ -33,13 +33,3 @@ map('n', '<leader>sv', '<C-w>v', { desc = 'split window vertically' })
 map('n', '<leader>sh', '<C-w>s', { desc = 'split window horizontally' })
 map('n', '<leader>se', '<C-w>=', { desc = 'make splits equal size' })
 map('n', '<leader>sx', '<cmd>close<CR>', { desc = 'close current split' })
-
--- Toggle transparency
-map('n', '<leader>tt', function()
-  local gruvbox = require('gruvbox')
-  local current_config = require('gruvbox.config').options
-  current_config.transparent_mode = not current_config.transparent_mode
-  gruvbox.setup(current_config)
-  vim.cmd.colorscheme('gruvbox')
-  print('Transparency:', current_config.transparent_mode and 'ON' or 'OFF')
-end, { desc = 'toggle transparency' })
