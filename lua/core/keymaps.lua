@@ -8,7 +8,7 @@ map('n', '<C-k>', '<C-w><C-k>', { desc = 'move to upper window' })
 map('n', '<leader>w', ':w<CR>', { desc = 'save file' })
 map('n', '<leader>q', ':q<CR>', { desc = 'close window' })
 
-map('i', 'jk', '<Esc>', { desc = 'exit insert mode' })
+map('i', 'jj', '<Esc>', { desc = 'exit insert mode' })
 
 map('v', 'p', '"_dP', { desc = 'paste without yanking' })
 
