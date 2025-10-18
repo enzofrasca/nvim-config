@@ -9,7 +9,7 @@ return {
             vim.keymap.set("n", "<leader>ha", function()
                 harpoon:list():add()
             end)
-            vim.keymap.set("n", "<leader>hh", function()
+            vim.keymap.set("n", "<leader>h", function()
                 harpoon.ui:toggle_quick_menu(harpoon:list())
             end)
             for i = 1, 5, 1 do

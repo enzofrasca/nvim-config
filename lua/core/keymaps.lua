@@ -18,7 +18,7 @@ map('v', '>', '>gv', { desc = 'indent right' })
 map('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'move selection down' })
 map('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'move selection up' })
 
-map('n', '<leader>h', ':nohlsearch<CR>', { desc = 'clear search highlights' })
+map('n', '<leader>nh', ':nohlsearch<CR>', { desc = 'clear search highlights' })
 
 map('n', '<leader>bn', ':bnext<CR>', { desc = 'next buffer' })
 map('n', '<leader>bp', ':bprevious<CR>', { desc = 'previous buffer' })
