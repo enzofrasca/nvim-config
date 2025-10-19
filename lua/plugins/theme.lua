@@ -1,15 +1,15 @@
 return {
   {
-    'rebelot/kanagawa.nvim',
+    'ellisonleao/gruvbox.nvim',
     priority = 1000,
     config = function()
       -- disable transparency on windows
       local transparent = not (vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1)
 
-      require('kanagawa').setup({
+      require('gruvbox').setup({
         transparent_mode = transparent,
       })
-      vim.cmd.colorscheme('kanagawa')
+      vim.cmd.colorscheme('gruvbox')
     end,
   },
   {
@@ -22,7 +22,7 @@ return {
     config = function()
       require('lualine').setup({
         options = {
-          theme = 'kanagawa',
+          theme = 'gruvbox',
         },
       })
     end,
