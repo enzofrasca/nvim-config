@@ -21,3 +21,4 @@ opt.expandtab = true
 opt.autoindent = true
 
 opt.clipboard = "unnamedplus"
+opt.autoread = true
